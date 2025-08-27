@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Nathaly 💙</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+      color: #004d40;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    section {
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0, 150, 136, 0.2);
+    }
+    button {
+      background-color: #4dd0e1;
+      color: #004d40;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #00bcd4;
+    }
+    #gatito {
+      display: none;
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 150, 136, 0.3);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #00695c;
+    }
+    .collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.collage img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.2);
+  transition: transform 0.3s ease;
+}
+.collage img:hover {
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.elemento {
+  animation: fadeIn 2s ease-in;
+}
+
+#popupMishi {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 150, 136, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.popup-content {
+  background-color: #e0f7fa;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 150, 136, 0.4);
+}
+
+.popup-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.cerrar {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #00796b;
+}
+
+  </style>
+</head>
+<body>
+  <h1>💙 Feliz Aniversario, Nathaly Barría 💙</h1>
+
+  <section>
+    <p>
+      Me disculpo por unapagina tan simple, la verdad no recordaba como programar , aproveche que eh estado retomando ete estudio y quise preparate algo ,
+      esta cabron la dificltad la verdad pero aqui esta mi felixitacion por nuestro aniversario amorcito te amo .
+<section>
+  <h2 style="color:#00796b;">Aqui un par de fotillos que me gustan </h2>
+  <div class="collage">
+    <img src="1.jpg" alt="Foto 1">
+    <img src="2.jpg" alt="Foto 2">
+    <img src="3.jpg" alt="Foto 3">
+    <img src="4.jpg" alt="Foto 4">
+    <img src="5.jpg" alt="Foto 5">
+  </div>
+  <!-- Botón para mostrar el mishi -->
+<button onclick="mostrarPopup()">xd 😻</button>
+
+<!-- Pop-up oculto -->
+<div id="popupMishi">
+  <div class="popup-content">
+    <span onclick="cerrarPopup()" class="cerrar">&times;</span>
+    <h3>Un saludo , ps un saludo  💖</h3>
+    <p style="font-style: italic;">"Te amo amorcito ."</p>
+    <img src="6.png" alt="Mishi tierno" />
+    <audio autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </div>
+</div>
+<script>
+  function mostrarPopup() {
+    document.getElementById("popupMishi").style.display = "block";
+  }
+
+  function cerrarPopup() {
+    document.getElementById("popupMishi").style.display = "none";
+  }
+</script>
+
+</section>
+
